@@ -16,7 +16,12 @@ connectCloudinary()
 
 //middlewares
 app.use(express.json()) //requst get passed using the jason
-app.use(cors()) //can access backend from any ip
+app.use(cors({
+  origin: 'https://infinity-frontend-beta.vercel.app',
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+})); //can access backend from any ip
 
 //api endpoints
 app.use('/api/user',userRouter)
