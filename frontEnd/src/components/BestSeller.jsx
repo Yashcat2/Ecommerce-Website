@@ -18,9 +18,9 @@ const BestSeller = () => {
         <div className='text-center text-3xl py-8'>
             <Title text1={'BEST'} text2={'SELLERS'} />
             <p className='w-3/4 m-auto text-xs sm:text-base text-gray-600'>
-            Text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text
-
+            Explore our collection of <strong>bestselling laptops</strong> at <strong>Infinity Laptop Store</strong> — trusted by thousands for reliability, performance, and style. These top-rated models combine powerful specs with unbeatable value, making them the perfect choice for work, play, and everything in between.
             </p>
+
 
         </div>
        {/* Rendering Products */}

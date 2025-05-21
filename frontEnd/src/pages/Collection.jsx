@@ -99,13 +99,13 @@ const Collection = () => {
           <p className='mb-3 text-sm font-medium'>CATEGORIES</p>
           <div className='flex flex-col gap-2 text-sm font-light text-gray-700 '>
             <p className='flex gap-2'>
-              <input type="checkbox" className='w-3' value={'Men'} onChange={toggleCategory} /> Men
+              <input type="checkbox" className='w-3' value={'Men'} onChange={toggleCategory} /> Huawei
             </p>
             <p className='flex gap-2'>
-              <input type="checkbox" className='w-3' value={'Women'} onChange={toggleCategory} /> Women
+              <input type="checkbox" className='w-3' value={'Women'} onChange={toggleCategory} /> Asus
             </p>  
             <p className='flex gap-2'>
-              <input type="checkbox" className='w-3' value={'Kids'} onChange={toggleCategory} /> Kids
+              <input type="checkbox" className='w-3' value={'Kids'} onChange={toggleCategory} /> Hp
             </p>
           </div>
         </div>
@@ -114,13 +114,13 @@ const Collection = () => {
           <p className='mb-3 text-sm font-medium'>TYPE</p>
           <div className='flex flex-col gap-2 text-sm font-light text-gray-700 '>
             <p className='flex gap-2'>
-              <input type="checkbox" className='w-3' value={'Topwear'}  onChange={toggleSubCategory} /> Topwear
+              <input type="checkbox" className='w-3' value={'Topwear'}  onChange={toggleSubCategory} /> Gaming laptops
             </p>
             <p className='flex gap-2'>
-              <input type="checkbox" className='w-3' value={'Bottomwear'}   onChange={toggleSubCategory} /> Bottomwear
+              <input type="checkbox" className='w-3' value={'Bottomwear'}   onChange={toggleSubCategory} /> Work laptops
             </p>
             <p className='flex gap-2'>
-              <input type="checkbox" className='w-3' value={'Winterwear'}   onChange={toggleSubCategory} /> Winterwear
+              <input type="checkbox" className='w-3' value={'Winterwear'}   onChange={toggleSubCategory} /> Budget laptops
             </p>
           </div>
         </div>
