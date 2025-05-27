@@ -1,3 +1,6 @@
+
+
+
 import express from 'express'
 import cors from 'cors'
 import 'dotenv/config'
@@ -13,28 +16,12 @@ const app = express()
 const port =  process.env.PORT || 4000
 connectDB()
 connectCloudinary()
-const allowedOrigins = [
-  'https://infinity-frontend-beta.vercel.app',
-  'https://infinity-admin-panel.vercel.app'
-];
 
 //middlewares
 app.use(express.json()) //requst get passed using the jason
 
 
-
-
-app.use(cors({
-  origin: function (origin, callback) {
-    if (!origin || allowedOrigins.includes(origin)) {
-      callback(null, true);
-    } else {
-      callback(new Error('CORS not allowed for this origin: ' + origin));
-    }
-  },
-  credentials: true
-}));
- //can access backend from any ip
+app.use(cors()) //can access backend from any ip
 
 //api endpoints
 app.use('/api/user',userRouter)
@@ -49,6 +36,11 @@ app.get('/',(req,res)=>{
 })
 
 app.listen(port, ()=>console.log('Server started on PORT :' + port))
+
+
+
+
+
 
 
 
@@ -69,12 +61,28 @@ app.listen(port, ()=>console.log('Server started on PORT :' + port))
 // const port =  process.env.PORT || 4000
 // connectDB()
 // connectCloudinary()
+// const allowedOrigins = [
+//   'https://infinity-frontend-beta.vercel.app',
+//   'https://infinity-admin-panel.vercel.app'
+// ];
 
 // //middlewares
 // app.use(express.json()) //requst get passed using the jason
 
 
-// app.use(cors()) //can access backend from any ip
+
+
+// app.use(cors({
+//   origin: function (origin, callback) {
+//     if (!origin || allowedOrigins.includes(origin)) {
+//       callback(null, true);
+//     } else {
+//       callback(new Error('CORS not allowed for this origin: ' + origin));
+//     }
+//   },
+//   credentials: true
+// }));
+//  //can access backend from any ip
 
 // //api endpoints
 // app.use('/api/user',userRouter)
@@ -89,3 +97,5 @@ app.listen(port, ()=>console.log('Server started on PORT :' + port))
 // })
 
 // app.listen(port, ()=>console.log('Server started on PORT :' + port))
+
+
