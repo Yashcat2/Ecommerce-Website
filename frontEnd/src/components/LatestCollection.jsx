@@ -18,7 +18,7 @@ const LatestCollection = () => {
         <div className='text-center py-8 text-3xl '>
             <Title text1={'LATEST'} text2={"COLLECTION"}/>
         <p className='w-3/4 m-auto text-xs sm:text-sm md:text-base text-gray-600'>
-        Discover the latest arrivals at <strong>Infinity Laptop Store</strong> — featuring cutting-edge technology, sleek designs, and powerful performance. Whether you're a gamer, a student, or a professional, our newest laptop collections are designed to meet your every need. Shop now and stay ahead with innovation!
+        Discover the latest arrivals at <strong>Infinity Laptop Store</strong> — featuring cutting-edge technology, sleek designs, and powerful performance. Whether you are a gamer, a student, or a professional, our newest laptop collections are designed to meet your every need. Shop now and stay ahead with innovation!
         </p>
 
         </div>
