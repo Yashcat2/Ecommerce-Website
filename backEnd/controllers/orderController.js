@@ -120,8 +120,6 @@ const verifyStripe = async (req, res) => {
 };
 
 
-
-
 // All Orders Data for Admin Panel
 const allOrders = async (req, res) => {
 
