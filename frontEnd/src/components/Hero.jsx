@@ -19,7 +19,7 @@ const Hero = () => {
   const carouselImages = [img1, img2, img3]
 
   return (
-    <div className="flex items-center justify-center h-screen mt-[-60px]">
+    <div className="flex items-center justify-center h-screen mt-[-90px]">
       <div className="w-screen max-w-10xl ">
         <Slider {...settings}>
           {carouselImages.map((imgSrc, idx) => (
