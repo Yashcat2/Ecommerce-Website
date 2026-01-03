@@ -18,7 +18,7 @@ const Contact = () => {
           <p className='text-gray-500'> Tel: (+94) 70-3199598 <br /> Email: ikykgunawardhana@gmail.com</p>
           <p className='font-semibold text-xl text-gray-600'>Careers at Forever</p>
           <p className='text-gray-500'>Learn More about our teams and job openings.</p>
-          <button className='border border-black px-8 py-4 text-sm hover:bg-black hover:text-white transition-all duration-500'> Explore Jobs</button>
+          <button  onClick={() => window.open('https://www.linkedin.com/in/yashodha-gunawardhana-217082219/', '_blank')} className='border border-black px-8 py-4 text-sm hover:bg-black hover:text-white transition-all duration-500'> Explore Jobs</button>
         </div>
       </div>
       <NewsLetter/>
